@@ -7,6 +7,8 @@
 
 # ---------------------------------------------------------
 print('---')
+print('example 1:')
+print('')
 
 # Variables
     # Variables are used to store information for later re-use
@@ -16,14 +18,13 @@ print('---')
 
 # In python variables don't need to be defined by a keyword
 
-print('example 1:')
-print('')
+
 
 varName = "varValue" # Python also doesn't require semicolons at the end of every line
 print('varName is equal to :::' + varName + ':::')
 
     # Where in JS we defined a variable by using the var keyword:
-        # var varName = varValue;
+        # var varName = 'varValue';
 print('')
 
 
@@ -36,6 +37,8 @@ print('varName is equal to :::' + varName + ':::')
 print('---')
 # ---------------------------------------------------------
 print('===')
+print('example 2:')
+print('')
 
 # Data Types
     # There are a lot of data types, but for now we'll just focus on 2
@@ -43,8 +46,7 @@ print('===')
         # And Strings or... strings..
 
 
-print('example 2:')
-print('')
+
 
 # We'll define a string
 myString = "This is a string"
@@ -80,6 +82,8 @@ print('var myInt is equal to :::' + str(myInt) + ':::')
 print('===')
 # ---------------------------------------------------------
 print('___')
+print('example 3:')
+print('')
 
 # Functions
     # A function is basically a re-usable set of instructions to perform
@@ -89,8 +93,7 @@ print('___')
 
     # ALL programming is basically functions on functions inside functions
 
-print('example 3:')
-print('')
+
 
 # To define a function in Python
 
@@ -130,6 +133,7 @@ print('___')
 print('###')
 print('example 4:')
 print('')
+
 # Conditionals
     # Conditionals let your program decide whether it should execute a block of code or not
     # They will always require some sort of input to gauge whether it is "truthy"
