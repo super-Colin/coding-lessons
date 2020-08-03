@@ -168,3 +168,20 @@ print('___')
     # 1
     # 2
     # 3
+
+        # and if you want even more points, put an if statement in there to not count to three after each For value
+
+            # ...
+            # 3
+            # First Item
+            # Second Item
+            # 1
+            # 2
+            # 3
+            # Second Item
+            # 1
+            # 2
+            # 3
+            # Second Item
+            # Third Item
+            # ...
