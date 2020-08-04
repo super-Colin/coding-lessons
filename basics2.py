@@ -7,7 +7,7 @@ print('Example 1: While Loop\n')
 
 # Loops
     # Loops allows us to create a set of instructions to be repeated over and over
-    # Usually until a certain condition is met.
+    # Until a certain condition is met.
 
     # A While Loop repeats itself *while* something is true, until it's not,
         # Be careful with these and be sure they will exit at some point
@@ -133,9 +133,9 @@ print('___')
 # Bonus Output:
 
     # First Item
-    # 1
-    # 2
-    # 3
+    # 1 / banana
+    # 2 / emoji
+    # 3 
     # First Item
     # 1
     # 2
@@ -169,7 +169,7 @@ print('___')
     # 2
     # 3
 
-        # and if you want even more points, put an if statement in there to not count to three after each For value
+        # and if you want even more points, put an if statement in there to not count to three after the last of each For value
 
             # ...
             # 3
