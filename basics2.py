@@ -134,8 +134,8 @@ print('___')
 
     # First Item
     # 1 / banana
-    # 2 / emoji
-    # 3 
+    # 2 / banana
+    # 3 / banana
     # First Item
     # 1
     # 2
