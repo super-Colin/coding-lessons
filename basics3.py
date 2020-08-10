@@ -149,9 +149,9 @@ print('\n> Modulus / "%" <')
 def isNumEven(num):
     print(str(num) + " % 2 = " + str(num % 2) )
 
-    if num % 2 == 0:
+    if num % 2 == 0: # think that 10 / 2 =  0 (so modulus returns 0)
         print("So " + str(num) +  " is Even")
-        # Here we can return True if the number is even incase we wanted to use it in another function
+        # We return True if the number is even, incase we want to use it somewhere else
         return True
     else:
         print(str(num) + " isn't even, so " + str(num) + " must be Odd")
