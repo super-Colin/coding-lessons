@@ -125,18 +125,28 @@ class classAboutSelf:
 
 
     # Self helps us access an individual object's "encapsulated" properties
-    def getSelfProp(self):
+    def getSelfProp2(self):
         return self.prop1
 
     # Self can be called something else if you wish but it will always be the first argument
-    def getThisProp(this):
-        return this.prop1
+        # "this" is a similar keyword in some languages
+    def getThisProp2(this):
+        return this.prop2
 
-objectAboutSelf = classAboutSelf("input value 1", "input value 2")
+    # Since self is always the first argument, 
+        # If we want to pass arguments to the method call they will be the second, third and so on
+        # Self will be automatically input by the object, so the method call here will only expect 3 arguments
+    def printSelfValPlusInput(self, methodNumInput, anotherMethodInput, asManyAsYouNeed): 
+        
+        print('self.inputVal1 + methodNumInput = ' str(self.inputVal1 + methodNumInput))
 
-print('getSelfProp =' + objectAboutSelf.getSelfProp() ) # Don't forget to invoke your object's methods
-print('getThisProp =' + objectAboutSelf.getThisProp() )
 
+objectAboutSelf = classAboutSelf( 1, "input value 2")
+
+print('getSelfProp2 =' + objectAboutSelf.getSelfProp() ) # Don't forget to invoke your object's methods
+print('getThisProp2 =' + objectAboutSelf.getThisProp() )
+
+objectAboutSelf.printSelfValPlusInput(3, 'anotherMethodInput (not used)', 'asManyAsYouNeed (unused)')
 
 # ! ! ! HOMEWORK ! ! ! 
 
