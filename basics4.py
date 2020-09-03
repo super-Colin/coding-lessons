@@ -118,33 +118,33 @@ class classAboutSelf:
 
     def __init__(self, inputVal1, inputVal2):
 
-        self.prop1 = inputVal1 
+        self.prop = inputVal1 
         # Here we're saying the object calling this init function,
             # The new object being created; or init'd, 
             # Should create a property called "prop1" and set it to the value passed in as "inputVal1"
 
 
     # Self helps us access an individual object's "encapsulated" properties
-    def getSelfProp2(self):
-        return self.prop1
+    def getSelfProp(self):
+        return self.prop
 
     # Self can be called something else if you wish but it will always be the first argument
         # "this" is a similar keyword in some languages
-    def getThisProp2(this):
-        return this.prop2
+    # def getThisProp(this):
+    #     return this.prop
 
     # Since self is always the first argument, 
         # If we want to pass arguments to the method call they will be the second, third and so on
         # Self will be automatically input by the object, so the method call here will only expect 3 arguments
     def printSelfValPlusInput(self, methodNumInput, anotherMethodInput, asManyAsYouNeed): 
         
-        print('self.inputVal1 + methodNumInput = ' str(self.inputVal1 + methodNumInput))
+        print('self.inputVal1 + methodNumInput = ' + str(self.prop + methodNumInput))
 
 
 objectAboutSelf = classAboutSelf( 1, "input value 2")
 
-print('getSelfProp2 =' + objectAboutSelf.getSelfProp() ) # Don't forget to invoke your object's methods
-print('getThisProp2 =' + objectAboutSelf.getThisProp() )
+print('getSelfProp =' + str(objectAboutSelf.getSelfProp()) ) # Don't forget to invoke your object's methods
+# print('getThisProp =' + str(objectAboutSelf.getThisProp()) )
 
 objectAboutSelf.printSelfValPlusInput(3, 'anotherMethodInput (not used)', 'asManyAsYouNeed (unused)')
 
